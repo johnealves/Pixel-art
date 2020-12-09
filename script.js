@@ -1,10 +1,10 @@
 window.onload = function() {
   let pixelBoard = document.querySelector('#pixel-board');
-  for (index = 0; index < 25; index += 1 ) {
-    let pixel = document.createElement("div");
-    pixel.className = 'pixel';
-    pixelBoard.appendChild(pixel);
-  }  
+  // for (index = 0; index < 25; index += 1 ) {
+  //   let pixel = document.createElement("div");
+  //   pixel.className = 'pixel';
+  //   pixelBoard.appendChild(pixel);
+  // }  
   randomColor()
 }
 
@@ -21,7 +21,6 @@ function randomColor() {
     newDiv.id = `rgb(${rgb})`;
     newDiv.style.background = newDiv.id;
     cp.appendChild(newDiv)
-
   }
 }
 
