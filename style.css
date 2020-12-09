@@ -6,10 +6,9 @@ body {
 
 header {
   margin-top: 0;
-  background-color: aquamarine;
+  background-image: url(pixel-art-game-background-grass-sky-clouds_210544-60.jpg);
   padding: 10px;
   margin-bottom: 10px;
-  background-image: url(/pixel-art-game-background-grass-sky-clouds_210544-60.jpg);
 }
 
 #color-palette {
@@ -42,7 +41,7 @@ header {
 
 .control-board {
   display: block;
-  margin: 5px;
+  margin-top: 15px;
 }
 
 .control {
