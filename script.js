@@ -14,7 +14,7 @@ function randomNumber() {
 }
 function randomColor() {
   let cp = document.querySelector('#color-palette');
-  for (let index = 0; index < 20; index += 1) {
+  for (let index = 0; index < 10; index += 1) {
     let newDiv = document.createElement('div')
     newDiv.className = 'color'
     let rgb = `${randomNumber()}, ${randomNumber()}, ${randomNumber()}`;
@@ -68,14 +68,14 @@ function sizeBoard() {
 
 function defineNumber() {
   let number = document.getElementById('board-size').value;
-  if (number === '' || number < 0) {
+  if (number === '') {
     alert('Board inválido!');
     number = 5;
   } else if (number < 5) {
-    alert('Valor menor que 5, considerar 5 como padrão');
+    alert('Valor menor que 5, será 5 como padrão');
     number = 5;
   } else if (number > 50) {
-    alert('Valor menor que 5, considerar 50 como padrão');
+    alert('Valor maior que 50, será 50 como padrão');
     number = 50;
   }
   newBoard(number)
