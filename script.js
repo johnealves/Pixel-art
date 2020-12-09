@@ -14,7 +14,7 @@ function randomNumber() {
 }
 function randomColor() {
   let cp = document.querySelector('#color-palette');
-  for (let index = 0; index < 3; index += 1) {
+  for (let index = 0; index < 20; index += 1) {
     let newDiv = document.createElement('div')
     newDiv.className = 'color'
     let rgb = `${randomNumber()}, ${randomNumber()}, ${randomNumber()}`;

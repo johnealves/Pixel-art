@@ -37,10 +37,17 @@ body {
 }
 
 .control {
+  font-family: 'Press Start 2P', cursive;;
   display: inline-block;
   border: 1px solid black;
   height: 25px;
-  width: 70px;
+  width: auto;
+  vertical-align: center;
+}
+
+#board-size {
+  margin-left: 100px;
+  width: 50px;
 }
 
 #pixel-board {
